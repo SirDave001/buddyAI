@@ -1,0 +1,59 @@
+{"intents": [
+    {"tag": "greetings",
+    "patterns": ["hello!", "hey", "hi", "howdy", "good day", "how are you", "Greetings", "what's up"],
+    "responses": ["Hello!", "Hey!", "What can i do for you", "How may I help you?"]
+},
+    {"tag": "about",
+    "patterns": ["what are you", "tell me about yourself", "how should i call you", "what can you do?", "who are you", "can you tell me your name", "can you tell  me about you", "tell  me about you"],
+    "responses": ["Hello! My name is BuddyAI and i am a personal assistant AI.", "I am BuddyAI"]
+},
+    {"tag": "weather_update",
+    "patterns": ["tell me the weather update", "What's the weather like today?", "how sunny will it be today?", "tell me the weather update", "will it snow tomorrow?",  "Tell me the weather", "Weather forecast", "How's the weather", "Check the weather"],
+    "responses": ["Sure, I can help you with that. Could you please specify the location or city for the weather information?"]
+},
+    {"tag": "weather_info",
+    "patterns": [f"Weather in {city}", f"Tell me the weather in {city}", f"How's the weather in {city} today?", f"What's the forecast for {city}?"],
+    "responses": ["Let me check the weather in {city} for you."]
+},
+    {"tag": "weather_condition",
+    "patterns": ["How is the weather", "Current weather conditions", "Describe the weather", "Tell me about the weather"],
+    "responses": ["Sure, I can provide you with the current weather conditions. Please specify the location."]
+},
+    {"tag": "farewell",
+    "patterns": ["bye", "goodbye", "see you later", "farewell", "thanks for today"],
+    "responses": ["Goodbye! If you need assistance in the future, don't hesitate to reach out.", "You are welcome, I was glad I could help"]
+},
+    {"tag": "news",
+    "patterns": ["What's happening in the world?", "Give me the latest news", "Any news updates?", "Tell me the news"],
+    "responses": ["Certainly! I can provide you with the latest news. Would you like headlines from a specific category or topic?"]
+},
+    {"tag": "news_category",
+    "patterns": ["News in {category}", "Tell me {category} news", "Any updates on {category}"],
+    "responses": [" for Let me fetch the latest news in the {category}you."]
+}],
+"wikipedia_search": [
+    {"tag": "politics",
+    "patterns": ["Tell me about the political history of {country}", "What is the political situation in {country}",
+                "Give me information on the political landscape of {country}", "I want to know more about the political system in {country}",
+                "Explain the current political events in {country}"],
+    "responses": ["Certainly! Let's explore the political history of {country}.", "I can provide you with information about the current political situation in {country}.",
+                "Great! I'll fetch details about the political landscape of {country} for you.", "I specialize in politics. I'll find details about the political system in {country}.",
+                "Absolutely! Give me a moment to retrieve information on the current political events in {country}."]
+},
+    {"tag": "history",
+    "patterns": ["Tell me about the history of {topic}", "Give me historical information on {topic}", "What is the historical background of {topic}",
+                "I want to know the history of {topic}", "Explain the historical significance of {topic}"],
+    "responses": ["Certainly! Let's delve into the history of {topic}.", "I can provide you with a historical overview of {topic}.",
+                "Great! I'll fetch historical information about {topic} for you.", "I specialize in history. I'll find details about the historical context of {topic}.",
+                "Absolutely! Give me a moment to retrieve the historical background of {topic} for you."]
+},
+    {"tag": "technology",
+    "patterns": ["Tell me about the technology of {topic}", "What is the technological background of {topic}",
+                "Give me technical information on {topic}", "I want to know about the technology behind {topic}",
+                "Explain the technological aspects of {topic}"],
+    "responses": ["Certainly! Let's delve into the technology of {topic}.", "I can provide you with technical details about {topic}.",
+                "Great! I'll fetch technical information about {topic} for you.", "I specialize in technology. I'll find details about the technological aspects of {topic}.",
+                "Absolutely! Give me a moment to retrieve the technological background of {topic} for you."]
+}
+]}
+  
